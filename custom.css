@@ -1,0 +1,301 @@
+body
+{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.customDiv
+{
+  background-image: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  height: 600px;
+}
+
+.customHead
+{
+  position: relative;
+  top: 50%;
+  min-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 44px;
+  font-family: 'Lexend Exa';
+  letter-spacing: 2px;
+}
+
+.circle
+{
+  text-align: center;
+  color: white;
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  border-top: solid rgba(255, 255, 255, 0.5); 2px;
+  border-radius: 50%;
+  line-height: 95px;
+  font-size: 30px;
+  opacity: 0.7;
+  transform: translate(000px,100px);
+  transition: 1.0s;
+  cursor: pointer;
+  box-shadow: 10px 20px 10px 5px rgba(0,0,0,1);
+}
+
+.circle:hover
+{
+  opacity: 1;
+  border-bottom:  solid rgba(255, 255, 255, 0.5); 2px;
+  border-top: solid rgba(0,0,0, 0.0); 0px;
+  box-shadow: 20px 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+
+.handleBars
+{
+  transform: translateY(200px) scale(0.3,0.3);
+}
+
+.testimonial
+{
+  background-color: white;
+  min-height: 300px;
+  border-radius: 30px;
+  position: relative;
+  width: 300px;
+  top: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.testHeader
+{
+  font-size: 18px;
+  font-family: Quicksand;
+  transform: translate(0,-50px);
+}
+
+.testImages
+{
+  border-radius: 50%;
+  transform: translate(100%,-50%);
+  height: 100px;
+  width: 100px;
+}
+
+.testTypography
+{
+  font-size: 14px;
+  font-family: Raleway;
+  transform: translateY(-50px);
+  line-height: 25px;
+}
+
+.backgroundBlur
+{
+  background-color: green;
+  min-height: 1000px;
+  background-image: url(city.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.whiteSpace
+{
+  min-height: 200px;
+  font-size: 20px;
+  word-spacing: 40px;
+  letter-spacing: 10px;
+  background-color: white;
+  text-align: center;
+  line-height: 200px;
+  font-family: Quicksand;
+  font-style: oblique;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+.footerMain
+{
+  min-height: 400px;
+  background-image: url(city2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer
+{
+  min-height: 100px;
+  /* background-color: grey; */
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  font-family: 'Pacifico';
+  letter-spacing: 10px;
+  font-weight: bold;
+  color: white;
+  transform: translate(0%,70%);
+  opacity: 0.5;
+  transition: 2s;
+}
+
+.footer:hover
+{
+  opacity: 1;
+}
+
+.formFooter
+{
+  background-color: white;
+  min-height: 350px;
+  transform: translateY(27px);
+  border-radius: 50px;
+  /* opacity: 0.7; */
+}
+
+.formFooter label
+{
+  line-height: 30px;
+  font-family: Quicksand;
+  font-size: 24px;
+  color: rgba(0,0,0,0.9);
+}
+
+.formFooter label,input,textarea
+{
+  transform: translate(20px,60px);
+}
+
+.formFooter input[type="text"],[type="email"]
+{
+  border-bottom: solid black 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  height: 40px;
+  color: black;
+  transform: translateX(50px);
+  /* border-radius: 10px; */
+  font-size: 14px;
+  width: 270px;
+}
+
+.formFooter textarea
+{
+  transform: translate(23px , 20px);
+  /* border-radius: 10px; */
+  border-bottom: :solid black 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: black;
+  font-size: 14px;
+  width: 270px;
+}
+
+.formFooter input[type="submit"]
+{
+  width: 300px;
+  height: 40px;
+  transform: translate(70px , 90px);
+  background-color: rgba(26, 188, 156, 0.7);
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  transition: 0.5s;
+}
+.formFooter input[type="submit"]:hover
+{
+  background-color: rgba(30, 132, 73, 1);
+  color: white;
+}
+
+/*Media Screen*/
+
+@media screen and (max-width : 600px)
+{
+  body
+  {
+    margin-right: -50px;
+  }
+  .customHead
+  {
+    font-size: 40px;
+  }
+
+  .circle
+  {
+    width: 300px;
+    height: 300px;
+  }
+
+  .handleBars
+  {
+    /* background-color: green; */
+    position: relative;
+    top: -380px;
+    min-height: 50px;
+    transition: 1s;
+  }
+
+  @keyframes anime
+  {
+    0%  {transform: translate(0px,10px);}
+    50%  {transform: translate(20px,20px);}
+    100%  {transform: translate(0px,10px);}
+  }
+
+  .Rotate
+  {
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .testimonial
+  {
+    min-height: 200px;
+    width: 300px;
+    transform: translateX(20px) translateY(-50px);
+  }
+
+  .footerMain
+  {
+    min-height: 600px;
+  }
+
+  .formFooter
+  {
+    transform: translateY(70px);
+    border-radius: 20px;
+  }
+
+  .formFooter label
+  {
+    font-size: 14px;
+    transform: translateY(0px);
+  }
+
+  .formFooter input[type="text"],[type="email"]
+  {
+    transform: translateX(-10px) scale(0.9,0.9) ;
+  }
+  textarea
+  {
+    position: relative;
+    left: -30px;
+    top: -20px;
+
+  }
+
+  .formFooter input[type="submit"]
+  {
+    transform: translate(25%,5px);
+    width: 200px;
+  }
+}
